@@ -1,0 +1,39 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-dark-gray;
+    padding: 3rem;
+  }
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 5rem;
+  
+    &--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 2rem;
+      line-height: 7rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      /* 
+      animation-timing-function: ease-in;
+      animation-iteration-count: 2;
+      animation-delay: 3s; */
+    }
+    &--sub {
+      margin-top: 1.5rem;
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.5rem;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+    }
+  }
