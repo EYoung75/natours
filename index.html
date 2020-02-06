@@ -15,24 +15,36 @@
   <body>
     <!-- NAVIGATION -->
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
 
       <label for="nav-toggle" class="navigation__button">
-          <span class="navigation__icon"></span>
+        <span class="navigation__icon"></span>
       </label>
 
       <div class="navigation__background">&nbsp;</div>
 
       <nav class="navigation__nav">
-          <ul class="navigation__list">
-              <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Us</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Why choose us</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
-              </ul>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>About Us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Why choose us</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Popular</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book now</a>
+          </li>
+        </ul>
       </nav>
-  </div>
+    </div>
     <!-- HERO HEADER SECTION -->
     <header class="header">
       <div class="header__logo-box">
@@ -145,7 +157,7 @@
 
       <!-- FLIP CARD OVERVIEW SECTION -->
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Highlight overview
@@ -183,7 +195,7 @@
                       $897
                     </p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now</a>
+                  <a href="#popup" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -219,7 +231,7 @@
                       $597
                     </p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now</a>
+                  <a href="#popup" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
@@ -255,14 +267,14 @@
                       $2,987
                     </p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now</a>
+                  <a href="#popup" class="btn btn--white">Book now</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">
+          <a href="#popup" class="btn btn--green">
             Discover all tours
           </a>
         </div>
@@ -408,36 +420,77 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__logo-box">
-
-          <picture class="footer__logo">
-              <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
-                      media="(max-width: 37.5em)">
-              <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
-          </picture>
-
-
-          
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="Full logo"
+            src="img/logo-green-2x.png"
+          />
+        </picture>
       </div>
       <div class="row">
-          <div class="col-1-of-2">
-              <div class="footer__navigation">
-                  <ul class="footer__list">
-                      <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                      <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                      <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-                      <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                      <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                  </ul>
-              </div>
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-1-of-2">
-              <p class="footer__copyright">
-                  Built by <a href="#" class="footer__link">Evan Young</a> cause yeet.
-                  Copyright &copy; Design by Jonas Schmedtmann
-              </p>
-          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Evan Young</a> cause yeet.
+            Copyright &copy; Design by Jonas Schmedtmann
+          </p>
+        </div>
       </div>
-  </footer>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a class="popup__close" href="#section-tours">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus
+            purus in massa tempor nec. Sed turpis tincidunt id aliquet risus
+            feugiat in ante metus. Semper risus in hendrerit gravida rutrum
+            quisque non. Non blandit massa enim nec dui. Amet venenatis urna
+            cursus eget nunc scelerisque viverra. Egestas diam in arcu cursus
+            euismod quis viverra nibh. Nunc sed id semper risus in. A arcu
+            cursus vitae congue mauris rhoncus.
+          </p>
+          <a class="btn btn--green" href="#">Book now</a>
+        </div>
+      </div>
+    </div>
     <!-- 
     <section class="grid-test">
       <div class="row">
